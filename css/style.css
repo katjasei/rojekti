@@ -1,0 +1,17 @@
+.navigation{
+    height: 58px;
+    background: #494949 linear-gradient(180deg, #282828, #686868);
+    min-width: 700px;
+    overflow: hidden;
+;
+}
+.navbutton{
+    border-style: none;
+    background: none;
+    color: whitesmoke;
+    height: 58px;
+    width: 16%;
+    max-width: 160px;
+    text-align: center;
+    font-size: 1.4em;
+}
