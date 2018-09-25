@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="navigation"> <!-- navigaatiopalkki, jokaiselle sivulle ylimmäksi -->
+        <button class="navbutton"> <a href="html/index/index.html>"></a>Etusivu </button>
+        <button class="navbutton"> <a href="html/liikunta/liikunta.html>"></a>Liikunta </button>
+        <button class="navbutton"> <a href="html/ruoka/ruoka.html>"></a>Ruoka </button>
+        <button class="navbutton"> <a href="html/teksti/teksti.hmtl>"></a>Teksti </button>
+        <button class="navbutton"> <a href="html/about/about.html>"></a>About </button>
+    </div>
+    <h1 class="heading">tämä on otsikko</h1>
+    <div class="borders">
+
+        <h2>
+        Tämä on alaotsikko!
+            </h2>
+
+        <div class="content-box-half">
+
+            <p>
+                tämä on puolisivuteksti! placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder
+            </p>
+        </div>
+
+        <div class="float-right">
+            <p>Tämä on oikealla kelluva kuva</p>
+        </div>
+
+        <div class="content-box-full">
+            tämä on kokoleveys teksti!  placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder
+        </div>
+
+    </div>
+</body>
+</html>
