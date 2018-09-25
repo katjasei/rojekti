@@ -1,0 +1,4 @@
+AuthType Basic  
+AuthName "restricted area"  
+AuthUserFile rojekti/html/about/.htpasswd
+require valid-user
