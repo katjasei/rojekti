@@ -10,7 +10,7 @@
 <h3>Kalorilaskuri:</h3>
 
 <form name="laskuriData">                                                           <!--Lomake tietojen keräykseen-->
-    Sukupuoli: <input type="radio" name="gender" value="mies"> Mies                 <!--Mies-valinta-->
+    Sukupuoli: <input type="radio" name="gender" value="mies" checked> Mies         <!--Mies-valinta-->
     <input type="radio" name="gender" value="nainen"> Nainen<br>                    <!--Nainen-valinta-->
     Pituus: <input type="number" id="length" name="pituus" min="1" max="666">cm<br> <!--Anna pituus-->
     Paino: <input type="number" id="weight" name="paino" min="1" max="666">kg<br>   <!--Anna paino-->
