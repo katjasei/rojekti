@@ -1,7 +1,7 @@
 <div class="navigation"> <!-- navigaatiopalkki, jokaiselle sivulle ylimmäksi -->
-  <button class="navbutton">Etusivu</button>
-  <button class="navbutton">Liikunta</button>
-  <button class="navbutton">Ruokavalio</button>
-  <button class="navbutton">Teksti</button>
-  <button class="navbutton">About</button>
+  <button class="navbutton"> <a href="html/index/index.html>">Etusivu</a> </button>
+  <button class="navbutton"> <a href="html/liikunta/liikunta.html>">Liikunta</a> </button>
+  <button class="navbutton"> <a href="html/ruoka/ruoka.html>">Ruoka</a> </button>
+  <button class="navbutton"> <a href="html/teksti/teksti.hmtl>">Teksti</a> </button>
+  <button class="navbutton"> <a href="html/about/about.html>">About</a> </button>
 </div>
