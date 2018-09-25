@@ -1,11 +1,21 @@
-.navigation{
+
+/* Navigaatiopalkki korkeus 58px, otsikon alareuna yläreunasta 78px,
+otsikon ja sisältökentän väli 64px.
+ */
+
+
+/* taustavärit ovat muotoilua varten, ne poistuvat kun yleinen teema rakennetaan */
+
+
+.navigation{  /* navigaatiopalkki */
     height: 58px;
+    margin: 0 0 0 0;
     background: #494949 linear-gradient(180deg, #282828, #686868);
     min-width: 700px;
     overflow: hidden;
 ;
 }
-.navbutton{
+.navbutton{  /* navigaatiopalkin nappula */
     border-style: none;
     background: none;
     color: whitesmoke;
@@ -14,4 +24,35 @@
     max-width: 180px;
     text-align: center;
     font-size: 1.4em;
+    margin: 0 0 0 0;
+}
+.borders{
+    background-color: bisque; /*kaikki sisältö on sidottu näihin marginaakeihin */
+    height: auto;
+    margin: 0 25px 0 25px;
+}
+.heading{
+    background-color: gray; /*Pääotsikko*/
+    margin-top: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    height: 40px;
+    width: auto;
+    text-align: center;
+}
+.content-box-half{  /*contentboxit siältävät pääasiassa textiä*/
+    background-color: lightgray;
+    width: 50%;
+    height: fit-content;
+}
+.content-box-full{
+    background-color: cornsilk;
+    height: fit-content;
+}
+.float-right{ /* Kuvia varten pääasiassa */
+    margin: 0 0 0 0;
+    background-color: deepskyblue;
+    width: auto;
+    height:auto;
+    float: right;
 }
