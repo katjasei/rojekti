@@ -1,0 +1,10 @@
+function laskeKalorit(sukupuoli, pituus, paino, ika) {
+  if (sukupuoli === 'm') {
+    tulos = (paino * 10) + (6.25 * pituus) - 5 * ika + 5;
+  } else if (sukupuoli === 'n') {
+    tulos = (paino * 10) + (6.25 * pituus) - 5 * ika - 161;
+  } else {
+    tulos = 'vituix män :(';
+  }
+  return tulos;
+}
