@@ -7,8 +7,26 @@ otsikon ja sisältökentän väli 64px.
 /* taustavärit ovat muotoilua varten, ne poistuvat kun yleinen teema rakennetaan */
 
 
+
+body{
+    min-height: 700px;
+    max-width: 1980px;
+    margin: auto auto 10px auto;
+    alignment: center;
+}
+
+.pohjavari1{
+    background: url("balls.svg") no-repeat right bottom;
+    background-size: cover;
+}
+.pohjavari2{
+    background: url("rectangles.svg") no-repeat right bottom;
+    background-size: cover;
+
+}
 .navigation{  /* navigaatiopalkki */
     height: 58px;
+    width: 101%;
     margin: 0 0 0 0;
     background: #494949 linear-gradient(180deg, #282828, #686868);
     min-width: 700px;
@@ -26,13 +44,12 @@ otsikon ja sisältökentän väli 64px.
     font-size: 1.4em;
     margin: 0 0 0 0;
 }
-.borders{
-    background-color: bisque; /*kaikki sisältö on sidottu näihin marginaakeihin */
+.borders{    /*kaikki sisältö on sidottu näihin marginaakeihin */
     height: auto;
-    margin: 0 25px 0 25px;
+    margin: 0 25px auto 25px;
 }
 .heading{
-    background-color: gray; /*Pääotsikko*/
+    background-color: transparent; /*Pääotsikko*/
     margin-top: 0;
     padding-top: 19px;
     padding-bottom: 19px;
@@ -41,18 +58,31 @@ otsikon ja sisältökentän väli 64px.
     text-align: center;
 }
 .content-box-half{  /*contentboxit siältävät pääasiassa textiä*/
-    background-color: lightgray;
+    background-color: transparent;
     width: 50%;
     height: fit-content;
 }
 .content-box-full{
-    background-color: cornsilk;
+    background-color: transparent;
     height: fit-content;
 }
 .float-right{ /* Kuvia varten pääasiassa */
-    margin: 0 0 0 0;
-    background-color: deepskyblue;
+    margin: 3px 3px 3px 3px;
+    background-color: transparent;
     width: auto;
     height:auto;
     float: right;
+}
+.twitter-follow-button{
+    color: whitesmoke;
+}
+.social{
+    margin: 100px auto 20px auto;
+    padding:0;
+    height: fit-content;
+    position: center;
+    bottom: 10px;
+    width:fit-content;
+    background-color: transparent;
+    text-align: center;
 }
