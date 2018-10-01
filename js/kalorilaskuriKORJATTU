@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Ravinto</title>
+        </head>
+<body>
+<h1>Ravinto</h1>
+
+<h3>Kalorilaskuri:</h3>
+
+<form name="laskuriData" id="form">                                                           <!--Lomake tietojen keräykseen-->
+    Sukupuoli: <input type="radio" name="gender" value="mies" id="mies"> Mies                 <!--Mies-valinta-->
+    <input type="radio" name="gender" value="nainen" id="nainen"> Nainen<br>                  <!--Nainen-valinta-->
+    Pituus: <input type="number" id="length" name="pituus" min="1" max="666">cm<br>           <!--Anna pituus-->
+    Paino: <input type="number" id="weight" name="paino" min="1" max="666">kg<br>             <!--Anna paino-->
+    Ikä: <input type="number" id="age" name="ika" min="1" max="125">v<br>                     <!--Anna ikä-->
+</form>
+<button id="laske">Laske</button>
+<br><br>
+
+<p id="kalorit"></p>
+
+
+<script language="JavaScript">
+
+  let pituus = document.getElementById("length");                                    //Määritä muuttujat ja hae tiedot laskemista varten.
+  let paino = document.getElementById("weight");
+  let ika = document.getElementById("age");
+  let sex;
+  let radio1 = document.getElementById('mies');
+  let radio2 = document.getElementById('nainen');
+
+  //for (let i = 0; i < radiot.length; i++)                                         //Tarkista kumpi sukupuoli on valittuna.
+ // {
+   // if (radiot[i].checked)
+  //  {
+   //   sex = radiot[i].value;                                                      //Määritä valittu sukupuoli muuttujaan.
+   //   break;                                                                      //Lopeta tarkistus kun valittu sukupuoli on löytynyt.
+   // }
+ // }
+
+  let nappi = document.getElementById("laske");
+
+  //nappi.addEventListener('click', laskeKalorit(sex, pituus, paino, ika));
+  
+   nappi.onclick = function(){laskeKalorit(radio1,radio2, parseFloat(pituus.value),parseFloat(paino.value), parseFloat(ika.value))};
+
+
+
+
+
+
+  function laskeKalorit(mies,nainen, pituus, paino, ika) {                            //laskurin toiminnallisuus
+    if (mies.checked) {
+      tulos = Math.round((paino * 10) + (6.25 * pituus) - 5 * ika + 5);               // Miesten laskukaava
+    } else if (nainen.checked) {
+      tulos = Math.round((paino * 10) + (6.25 * pituus) - 5 * ika - 161);             //Naisten laskukaava
+    } else {
+      tulos = 'vituix män :(';                                                      //Virhetuloste jos sukupuolen määritys epäonnistui
+    }
+    document.getElementById("kalorit").innerText = tulos;                           //tulosta lopputulos
+  }
+</script>
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
